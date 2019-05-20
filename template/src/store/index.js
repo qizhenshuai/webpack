@@ -1,4 +1,3 @@
-{{#if_eq build "standalone"}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import app from './modules/app'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
