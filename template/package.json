@@ -22,11 +22,18 @@
     {{#lint}}
     "lint": "eslint --ext .js,.vue src{{#unit}} test/unit{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}",
     {{/lint}}
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "build:dev": "node build/build.js",
+    "build:staging2": "node build/build.js",
+    "build:staging3": "node build/build.js",
+    "build:pre": "node build/build.js",
+    "build:prod": "node build/build.js",
   },
   "dependencies": {
+    "axios": "^0.16.1",
     "vue": "^2.5.2"{{#router}},
-    "vue-router": "^3.0.1"{{/router}}
+    "vue-router": "^3.0.1"{{/router}}{{#vuex}},
+    "vuex": "^2.1.1"{{/vuex}}
   },
   "devDependencies": {
     {{#lint}}
